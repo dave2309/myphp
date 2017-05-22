@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ruleset name="PSR2-ToM">
+ <description>The PSR-2 for ToM coding standard.</description>
+ <arg name="tab-width" value="4"/>
+  <rule ref="PSR2">
+     <!-- Tom CakePHP 2 does not support namespace totally -->
+     <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
+     <!-- ToM does not follow the camel case method name standards -->
+     <exclude name="Squiz.Classes.ValidClassName.NotCamelCaps"/>
+     <exclude name="PSR1.Methods.CamelCapsMethodName.NotCamelCaps" />
+ </rule>
+ </ruleset>
